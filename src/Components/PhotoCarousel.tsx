@@ -13,19 +13,19 @@ export const PhotoCarousel = () => {
             id: 127,
             title: 'Winter over the Hoodoos',
             location: 'Bryce Canyon, Utah',
-            mediumImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/23.01+Bryce+Pano+5MB.jpg',
+            mediumImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/SZ6_9986-Pano-med.jpg',
             smallImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/23.01+Bryce+Pano-small.jpg',
             alt: 'Sunset over the hoodoo statues in the snowy winter at Bryce canyon national park',
             width: '4'
         },
         {
-            id: 126,
-            title: 'Delicate Arch',
-            location: 'Moab, Utah',
-            mediumImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/12.09+Moab-239-Edit+4x6+5MB.jpg',
-            smallImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/12.09+Moab-239-Edit+4x6+small.jpg',
-            alt: 'Bright red delicate arch against the dark stormy sky in Arches National Park',
-            width: '4'
+            id: 129,
+            title: 'Horseshoe Bend Sunset',
+            location: 'Page, Arizona',
+            mediumImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/20.07+Powell-357+4x6+5MB.jpg',
+            smallImage: 'https://xolitude-photos.s3.us-west-2.amazonaws.com/20.07+Powell-357+4x6-small.jpg',
+            alt: 'A uniquely green river bending around a sandstone tower in a horse shoe shape at the east rim of the grand canyon',
+            width: '6'
         },
         {
             id: 128,

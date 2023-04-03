@@ -10,7 +10,7 @@ export const ContactInfo = () =>  {
         <ContactContainer>
             <Container >
                 <Row className="g-0 content-area">
-                    <Col md='8' className='left-section'>
+                    <Col lg='8' className='left-section'>
                         <br/>
                         <h3 className='contact-label'>Contact Us</h3>
                         <p className='details-info'> Xolitude Photos is currently only taking orders through email <br/> We are happy to answer any questions you have</p>
@@ -21,10 +21,8 @@ export const ContactInfo = () =>  {
                         <h3 className='subheader'>Phone:</h3>
                         <p>(801) 602-3210</p>
                     </Col>
-                    <Col md='4'>
-                        <div className='right-section'>
+                    <Col lg='4'>
                             <img  src='https://myprofilephotos123123.s3.us-west-2.amazonaws.com/night-imm.jpg' className='photo-right'/>
-                        </div>
                     </Col>
                 </Row>
             </Container>
@@ -42,15 +40,14 @@ const ContactContainer = styled.div`
     }
     .content-area {
         height: 60vh;
-        position: absolute;
-        align-content: center;
         color: #b6b6b6;
+        display: flex;
     }
     .left-section {
         padding: 40px 40px 90px 90px;
         text-align: left;
         background-color: #1f1f1f;
-        height: 60vh;
+        min-height: 60vh;
     }
     .subheader {
         font-size: 24px;
@@ -65,7 +62,7 @@ const ContactContainer = styled.div`
     }
     .photo-right {
         width: 40vw;
-        margin-left: -50px;
+        margin-left: -5vw;
         margin-top: 50px;
     }
     .info-section {
@@ -77,6 +74,20 @@ const ContactContainer = styled.div`
         top: 20%;
         width: 500px;
         margin-left: -300px;
-
+    }
+    @media screen and (max-width: 767px) {
+        .photo-right {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 992px) and (min-width: 767px)  {
+        .photo-right {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .content-area {
+            display: contents;
+        }
     }
 `

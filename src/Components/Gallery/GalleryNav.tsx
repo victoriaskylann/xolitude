@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import styled from 'styled-components'
-import {  Col, Row } from 'react-bootstrap'
+import {  Col, Row, Button } from 'react-bootstrap'
 import { Photo }  from '../../Types/ItemTypes'
 import '../../App.css';
 import { ViewPhoto } from './ViewPhoto';
@@ -147,7 +147,8 @@ export const GalleryNav = () => {
                     <Col md={photo.width}>
                         <div className='gallery-photo' onClick={() => showPhotoModal(photo)}>
                             <img src={photo.smallImage} alt={photo.alt} />
-                            <p className='photo-title'>{photo.title}</p>
+                            <p className='photo-title'>{photo.title} <span className='view-button'>View</span></p> 
+                            
                         </div>
                     </Col>
                 ))}
@@ -175,10 +176,12 @@ const GalleryContainer = styled.div`
         text-align: left;
     }
 
+
     img{
         width: 100%;
-        margin-bottom: 10px;
         object-fit: cover;
+        max-height: 90vh;
+        object-fit: scale-down;
     }
     .image-row {
         padding: 20px;
@@ -186,9 +189,21 @@ const GalleryContainer = styled.div`
     .photo-title {
         text-align: left;
         font-size: 20px;
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: space-between;
     }
     .gallery-photo {
         margin: 10px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.483) 0px 1px 3px, rgba(0, 0, 0, 0.442) 0px 1px 2px;
+        border-radius: 5px;
+    }
+    .view-button{
+        cursor: pointer;
+        font-size: 12px;
+        color: #717070;
     }
 `
 

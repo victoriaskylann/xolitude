@@ -28,7 +28,7 @@ export const ViewPhoto = ({photo, show, onHide}: ViewPhotoProps) =>  {
                             <span className='close-button' onClick={onHide}><CloseIcon/></span>
                         </ButtonContainer>
                         <Row>
-                            <Col lg='8'><img className='main-image' src={photo.mediumImage} /></Col>
+                            <Col lg='8'><img className='main-image' src={photo.mediumImage}  alt={photo.alt}/></Col>
 
                             <Col lg='4'>
                                 <Row>
@@ -75,5 +75,9 @@ const ModalBodyContainer = styled.div`
         font-style: italic;
         padding-top: 10px;
         font-weight: 300;
+    }
+    .main-image {
+        max-height: 80vh;
+        object-fit: scale-down;
     }
 `

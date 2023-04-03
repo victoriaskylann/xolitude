@@ -13,12 +13,12 @@ export const ContactInfo = () =>  {
                     <Col md='8' className='left-section'>
                         <br/>
                         <h3 className='contact-label'>Contact Us</h3>
+                        <p className='details-info'> Xolitude Photos is currently only taking orders through email <br/> We are happy to answer any questions you have</p>
                         <h3 className='subheader'>Photographer:</h3>
                         <p>Steven Black</p>
-                        <br/>
                         <h3 className='subheader'>Email:</h3>
                         <p>xolitude@usa.com</p>
-                        <h3 className='subheader'>Email:</h3>
+                        <h3 className='subheader'>Phone:</h3>
                         <p>(801) 602-3210</p>
                     </Col>
                     <Col md='4'>
@@ -36,6 +36,10 @@ const ContactContainer = styled.div`
     min-height: 65vh;
     margin-top: 100px;
     margin-bottom: 100px;
+    .details-info {
+        font-style: italic;
+        margin-bottom: 30px;
+    }
     .content-area {
         height: 60vh;
         position: absolute;
@@ -54,7 +58,7 @@ const ContactContainer = styled.div`
     }
     .contact-label {
         font-weight: bold;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         margin-top: 30px;
         font-size: 40px;
         color: #eeeeee;

@@ -1,14 +1,8 @@
-import React, { FormEvent } from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import styled from 'styled-components'
 import '../../App.css';
 import {Container, Col, Row} from 'react-bootstrap';
-
-const defaultFormFields = {
-    firstName: '',
-    email: '',
-    message: ''
-}
 
 export const ContactInfo = () =>  {
 

@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
 import { Photo }  from '../Types/ItemTypes';
+import  { Link } from 'react-router-dom'
 
 export const PhotoCarousel = () => {
     const carouselPhotos: Photo[] = [
@@ -50,7 +51,7 @@ export const PhotoCarousel = () => {
                     />
                     <Carousel.Caption>
                         <h1 className='title'>Make you walls look amazing</h1>
-                        <Button variant="outline-light" href="gallery">View Gallery</Button> 
+                        <Link to="/gallery" className='nav-link'> <Button variant="outline-light" >View Gallery</Button></Link>
                     </Carousel.Caption>
                 </Carousel.Item>
 

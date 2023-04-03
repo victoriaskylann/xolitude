@@ -31,26 +31,27 @@ export const Header = () => {
 }
 
 const HeaderContainer = styled.div`
-    padding: 0 50px;
+    padding: 2vh 2vw;
     background-color: #eeeeee;
-    height: 120px;
+    min-height: 120px;
     width: 100%;
     justify-content: space-between;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 
     .logo-container {
         display: flex;
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
+        padding: 2vh 0;
     }
     .logo {
         height: 45px;
-        padding:0 20px;
+        padding:0 2vw;
     }
     .logo-icon {
         padding: 0 15px;

@@ -11,6 +11,17 @@
   font-size: 28px;
   font-weight: 500;
 }
+@media screen and (max-width: 480px) {
+  .header-logo {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 780px) and (min-width: 481px) {
+  .header-logo {
+    font-size: 20px
+  }
+}
+
 
 .main-image {
   width: 100%;

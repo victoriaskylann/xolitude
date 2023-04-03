@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import '../../App.css';
+import  { Link } from 'react-router-dom'
+
 
 
 export const SampleGallery = () => {
@@ -19,7 +21,7 @@ export const SampleGallery = () => {
                 </Row>
                 <Row className='button-row'>
                     <div >
-                        <Button variant="outline-light" >View More in Gallery</Button> 
+                        <Link to="/gallery" className='nav-link'> <Button variant="outline-light" >View More in Gallery</Button></Link>
                     </div>
                 </Row>
         </GalleryContainer>

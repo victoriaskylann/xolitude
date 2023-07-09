@@ -50,7 +50,7 @@ export const PhotoCarousel = () => {
                         alt={photo.alt}
                     />
                     <Carousel.Caption>
-                        <h1 className='title'>Make you're walls look amazing</h1>
+                        <h1 className='title'>Make your walls look amazing</h1>
                         <Link to="/gallery" className='nav-link'> <Button variant="outline-light" >View Gallery</Button></Link>
                     </Carousel.Caption>
                 </Carousel.Item>

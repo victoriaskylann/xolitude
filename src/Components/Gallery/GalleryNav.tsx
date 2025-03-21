@@ -182,25 +182,25 @@ export const GalleryNav = () => {
                 alt={photo.alt}
                 onClick={() => showPhotoModal(photo)}
               />
-              <div className="photo-title">
-                <span>{photo.title}</span>
-                <div className="button-group">
-                  <button
-                    className="view-button"
-                    onClick={() => showPhotoModal(photo)}
-                  >
-                    View
-                  </button>
-                  <button
-                    className="add-cart-button"
-                    onClick={(e) => handleAddToCart(photo, e)}
-                  >
-                    <span className="button-text">Add to Cart</span>
-                    <span className="button-icon">
-                      <CartIcon color="currentColor" />
-                    </span>
-                  </button>
-                </div>
+            </div>
+            <div className="photo-title">
+              <span>{photo.title}</span>
+              <div className="button-group">
+                <button
+                  className="view-button"
+                  onClick={() => showPhotoModal(photo)}
+                >
+                  View
+                </button>
+                <button
+                  className="add-cart-button"
+                  onClick={(e) => handleAddToCart(photo, e)}
+                >
+                  <span className="button-text">Add to Cart</span>
+                  <span className="button-icon">
+                    <CartIcon color="currentColor" />
+                  </span>
+                </button>
               </div>
             </div>
           </Col>
@@ -248,11 +248,12 @@ const GalleryContainer = styled.div`
   }
   .photo-title {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 3vw;
     align-items: center;
     justify-content: space-between;
+    text-transform: uppercase;
 
     .button-group {
       display: flex;
@@ -303,10 +304,11 @@ const GalleryContainer = styled.div`
     }
   }
   .gallery-photo {
-    margin: 10px;
+    margin: 3vw;
+    margin-bottom: 2px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.483) 0px 1px 3px,
       rgba(0, 0, 0, 0.442) 0px 1px 2px;
-    border-radius: 5px;
+    background-color: #3f3f3f;
   }
 `;
